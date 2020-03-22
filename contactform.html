@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task contact form</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+<style>
+    body{
+        background-color: black;
+    }
+.contactform{
+    text-align: center;
+    margin: 0 auto;
+    padding:20px;
+    width: 600PX;
+    border: 2px solid #333333;
+    
+background-color: azure;
+
+    }
+    form{
+        padding: 3px;
+        background-color: bisque;
+    }
+h3{
+    opacity: 0.5;
+    background-color: crimson;
+}
+</style>
+</head>
+<body>
+<div class="contactform">
+    <form action="submit.php" method="post">
+    <h3> CONTACT FORM</h3>
+
+
+    <label for="full_name"> Full Name</label><br/>
+    <input type="text" name="full_name" placeholder="Enter full name"/><br/>
+
+    <label for="user_name">User Name</label><br/>
+    <input type="text" name="user_name" placeholder="Enter username"/><br/>
+
+    <label for="email">Email?</label><br/>
+    <input type="text" name=email placeholder="Enter email" required/><br/>
+
+    <label for="email">choose one</label><br/>
+    <select>
+        <option>new user</option>
+        <option>alredy registered</option>
+        <option> enquiry</option>
+        <option>complains</option>
+    </select><br/>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" /> Female 
+                    <input type="radio" name="gender" /> Male<br/>
+
+    <label for="email">Your message</label><br/>
+    <textarea name="message" cols="20" rows="5"> comments.. </textarea><br/>
+    
+        <input type="checkbox" name="terms" /> by checking this box you agree to our terms and conditions<br/>
+    
+    <button type="submit" name="submit" class="btn btn-success">send message</button><br/>
+
+<button type="reset" name="reset" class="btn btn-warning">clear all</button><br/>
+
+</form>
+    
+</div>
+</body>
+    
+</html>
